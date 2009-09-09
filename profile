@@ -10,6 +10,11 @@ if [ -e /etc/profile.env ] ; then
 	. /etc/profile.env
 fi
 
+# You should override these in your ~/.bashrc (or equivalent) for per-user
+# settings.  For system defaults, you can add a new file in /etc/profile.d/.
+export EDITOR=${EDITOR:-/bin/nano}
+export PAGER=${PAGER:-/usr/bin/less}
+
 # 077 would be more secure, but 022 is generally quite realistic
 umask 022
 
@@ -28,11 +33,6 @@ else
 fi
 export PATH
 unset ROOTPATH
-
-# Extract the value of EDITOR
-[ -z "$EDITOR" ] && EDITOR="`. /etc/rc.conf 2>/dev/null; echo $EDITOR`"
-[ -z "$EDITOR" ] && EDITOR="/bin/nano"
-export EDITOR
 
 if [ -n "${BASH_VERSION}" ] ; then
 	# Newer bash ebuilds include /etc/bash/bashrc which will setup PS1
@@ -54,12 +54,10 @@ else
 	# Setup a bland default prompt.  Since this prompt should be useable
 	# on color and non-color terminals, as well as shells that don't
 	# understand sequences such as \h, don't put anything special in it.
-	PS1="`whoami`@`uname -n | cut -f1 -d.` \$ "
+	PS1="${USER:-$(type whoami >/dev/null && whoami)}@$(type uname >/dev/null && uname -n) \$ "
 fi
 
 for sh in /etc/profile.d/*.sh ; do
-	if [ -r "$sh" ] ; then
-		. "$sh"
-	fi
+	[ -r "$sh" ] && . "$sh"
 done
 unset sh
