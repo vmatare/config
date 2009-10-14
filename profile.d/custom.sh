@@ -1,5 +1,4 @@
 export PATH=${PATH}:${HOME}/bin
-export PS1="(pentium3-m) $PS1"
 export EDITOR="/usr/bin/vim"
 
 alias ls="ls --color=auto --show-control-chars"
