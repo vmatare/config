@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<gconf>
+        <dir name="apps">
+                <dir name="nautilus">
+                        <dir name="preferences">
+                                <entry name="always_use_browser" mtime="1256239127" type="bool" value="true"/>
+                        </dir>
+                </dir>
+        </dir>
+</gconf>
