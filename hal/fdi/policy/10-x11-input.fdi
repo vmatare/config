@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<deviceinfo version="0.2">
+   <match key="info.capabilities" contains="input.keys">
+      <merge key="input.xkb.layout" type="string">de</merge>
+      <merge key="input.xkb.variant" type="string">deadgraveacute</merge>
+   </match>
+</deviceinfo>
+
