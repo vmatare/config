@@ -29,9 +29,3 @@ root	ALL=(ALL) ALL
 # Samples
 # %users  ALL=/sbin/mount /cdrom,/sbin/umount /cdrom
 # %users  localhost=/sbin/shutdown -h now
-
-openvpn localhost = NOPASSWD: /sbin/resolvconf -d tun0
-openvpn localhost = NOPASSWD: /sbin/resolvconf -a tun0
-openvpn localhost = NOPASSWD: /sbin/resolvconf -d tap0
-openvpn localhost = NOPASSWD: /sbin/resolvconf -a tap0
-
