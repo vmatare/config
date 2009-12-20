@@ -10,10 +10,10 @@
       <merge key="input.x11_options.TopEdge" type="string">1100</merge>
       <merge key="input.x11_options.LeftEdge" type="string">1200</merge>
       <merge key="input.x11_options.BottomEdge" type="string">4730</merge>
-      <merge key="input.x11_options.RightEdge" type="string">5570</merge>
+      <merge key="input.x11_options.RightEdge" type="string">5520</merge>
       <merge key="input.x11_options.MaxTapMove" type="string">110</merge>
-      <merge key="input.x11_options.FingerHigh" type="string">47</merge>
-      <merge key="input.x11_options.FingerLow" type="string">40</merge>
+      <merge key="input.x11_options.FingerHigh" type="string">42</merge>
+      <merge key="input.x11_options.FingerLow" type="string">35</merge>
       <merge key="input.x11_options.HorizScrollDelta" type="string">100</merge>
       <merge key="input.x11_options.VertScrollDelta" type="string">100</merge>
       <merge key="input.x11_options.LockedDrags" type="string">1</merge>
