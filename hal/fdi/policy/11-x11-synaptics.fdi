@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<deviceinfo version="0.2">
+  <device>
+    <match key="input.product" contains="Synaptics TouchPad">
+      <merge key="input.x11_driver" type="string">synaptics</merge>
+      <merge key="input.x11_options.SHMConfig" type="string">on</merge>
+      <merge key="input.x11_options.AccelFactor" type="string">0.0035</merge>
+      <merge key="input.x11_options.MinSpeed" type="string">0.2</merge>
+      <merge key="input.x11_options.MaxSpeed" type="string">0.5</merge>
+      <merge key="input.x11_options.TopEdge" type="string">1100</merge>
+      <merge key="input.x11_options.LeftEdge" type="string">1200</merge>
+      <merge key="input.x11_options.BottomEdge" type="string">4730</merge>
+      <merge key="input.x11_options.RightEdge" type="string">5570</merge>
+      <merge key="input.x11_options.MaxTapMove" type="string">110</merge>
+      <merge key="input.x11_options.FingerHigh" type="string">47</merge>
+      <merge key="input.x11_options.FingerLow" type="string">40</merge>
+      <merge key="input.x11_options.HorizScrollDelta" type="string">100</merge>
+      <merge key="input.x11_options.VertScrollDelta" type="string">100</merge>
+      <merge key="input.x11_options.LockedDrags" type="string">1</merge>
+      <merge key="input.x11_options.PalmDetect" type="string">on</merge>
+      <merge key="input.x11_options.PalmMinZ" type="string">80</merge>
+      <merge key="input.x11_options.Protocol" type="string">auto-dev</merge>
+      <merge key="input.x11_options.ZAxisMapping" type="string">4    5</merge>
+      <merge key="input.x11_options.TapButton1" type="string">1</merge>
+      <merge key="input.x11_options.VertEdgeScroll" type="string">1</merge>
+      <merge key="input.x11_options.HorizEdgeScroll" type="string">1</merge>
+      <merge key="input.x11_options.TapButton1" type="string">1</merge>
+    </match>
+  </device>
+</deviceinfo>
