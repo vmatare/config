@@ -1,0 +1,1 @@
+QUICKPKG_DEFAULT_OPTS="--umask=0033 --include-unmodified-config=y"
