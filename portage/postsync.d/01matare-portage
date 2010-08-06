@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cd /var/git/matare-portage && git pull
+eix-update
